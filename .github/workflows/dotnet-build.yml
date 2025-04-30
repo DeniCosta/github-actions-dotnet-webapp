@@ -24,10 +24,10 @@ jobs:
       with:
         dotnet-version: 8.0.x
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore ./github4women/github4women.csproj
     - name: Script personalizado
       run: |
-        CURRENT_TIME=$(date)
+        CURRENT_TIME=$(date)s
         echo "Executando script personalizado às $CURRENT_TIME"
     - name: Build
       run: dotnet build --no-restore
