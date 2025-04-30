@@ -30,4 +30,4 @@ jobs:
         CURRENT_TIME=$(date)s
         echo "Executando script personalizado às $CURRENT_TIME"
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build --no-restore ./github4women/github4women.csproj
